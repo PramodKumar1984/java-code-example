@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
 
 public class ReadFromFiles {
 	public static void main(String[] args) throws IOException {
-		List<File> files = Files.walk(Paths.get("E://TeXtfiles_STS//")).filter(Files::isRegularFile).map(Path::toFile)
+		List<File> files = Files.walk(Paths.get(Paths.get(".").toAbsolutePath()+"\\resource\\txt_files")).filter(Files::isRegularFile).map(Path::toFile)
 				.limit(1).collect(Collectors.toList());
 		try (BufferedReader reader = new BufferedReader(new FileReader(files.get(0)))) {
 			reader.lines().forEach(System.out::println);

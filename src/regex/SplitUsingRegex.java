@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 public class SplitUsingRegex {
 	public static void main(String [] args) {
+		String emailCount = "firstName.lastname@";
 		String regex = "[0-9|\\p{Punct}]";
 		String [] orignials = {"Pramod!Kumar","fname@lname","Pramod1Kumar"};
 		for (String orginal : orignials ) {
