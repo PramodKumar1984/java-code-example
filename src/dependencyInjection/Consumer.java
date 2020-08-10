@@ -1,0 +1,5 @@
+package dependencyInjection;
+
+public interface Consumer {
+	void processMessage(String msg, String rec);
+}
