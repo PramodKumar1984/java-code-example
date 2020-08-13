@@ -10,4 +10,11 @@ public class SortingHelper {
 		System.out.println("--");
 	}
 	
+	
+	public static void printStringArray(char[] arr) {
+		for(char a : arr) {
+			System.out.print(a+"--");
+		}
+		System.out.println("--");
+	}
 }

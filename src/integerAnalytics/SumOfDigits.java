@@ -1,10 +1,8 @@
-package analytics;
+package integerAnalytics;
 
 public class SumOfDigits {
 	public static void main(String[] args) {
-
 		System.out.println(returnsum(9999));
-
 	}
 
 	public static int returnsum(Integer a) {
